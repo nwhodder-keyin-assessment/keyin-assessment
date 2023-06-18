@@ -7,7 +7,7 @@ function TopNav() {
         <nav>
             <Link to="/" id="title">Recipes</Link>
             <div id="links">
-                <Link to="/message" className="link">Message</Link>
+                <Link to="/createrecipe" className="link">Create Recipe</Link>
                 <Link to="/random" className="link">Random</Link>
                 <Link to="/all" className="link">All</Link>
             </div>

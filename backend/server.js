@@ -4,13 +4,22 @@ import cors from "cors"
 const app = express();
 
 app.use(cors())
-// app.use(express.json())
 
 const port = 5000
 
-app.get("/message", (req, res) => {
-    res.json({ message : "Hello From Express" })
-    console.log("Serving message")
+app.get("/all", (req, res) => {
+    res.json({ message : "All From Express" })
+    console.log("Serving all")
+})
+
+app.get("/Random", (req, res) => {
+    res.json({ message : "Random From Express" })
+    console.log("Serving random")
+})
+
+app.get("/createrecipe", (req, res) => {
+    res.json({ message : "Create New Recipe From Express" })
+    console.log("Serving createrecipe")
 })
 
 app.listen(port, () => {
