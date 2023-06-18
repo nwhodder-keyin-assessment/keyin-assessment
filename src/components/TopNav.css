@@ -1,0 +1,44 @@
+nav {
+    background-color: RGB(20,160,200);
+    width: 100vw;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#title {
+    color: white;
+    display: flex;
+    justify-self: flex-start;
+    margin: 0;
+    margin-left: 2vw;
+    align-self: flex-start;
+    font-size: 6vh;
+    text-decoration: none;
+}
+
+#title:visited{
+    text-decoration: none;
+}
+
+#links {
+    display: flex;
+    margin: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link {
+    margin-right: 5vw;
+    border: none;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+}

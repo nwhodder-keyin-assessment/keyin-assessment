@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import TopNav from './components/TopNav'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   
   return (
     <>
+      <TopNav/>
       <h1>Hello World</h1>
       <p>Message: {message}</p>
     </>
