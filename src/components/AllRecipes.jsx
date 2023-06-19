@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import Recipe from "./Recipe";
 
 function AllRecipes() {
     const [data, setData] = useState({})
@@ -14,8 +15,7 @@ function AllRecipes() {
 
     return(
         <div>
-            <h1>ID: {data.id}</h1>
-            <h1>Title: {data.title}</h1>
+            <Recipe data={data} />
         </div>
     )
 }

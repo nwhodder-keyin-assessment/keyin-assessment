@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import getAllRecipes from "./pgsql.js";
+import db from "./pgsql.js";
 
 const app = express();
 
@@ -12,12 +12,9 @@ const port = 5000
 //     res.json({ message : "All From Express" })
 //     console.log("Serving all")
 // })
-app.get("/all", getAllRecipes)
+app.get("/all", db.getAllRecipes)
 
-app.get("/Random", (req, res) => {
-    res.json({ message : "Random From Express" })
-    console.log("Serving random")
-})
+app.get("/Random", db.getRandomRecipe)
 
 app.get("/createrecipe", (req, res) => {
     res.json({ message : "Create New Recipe From Express" })
